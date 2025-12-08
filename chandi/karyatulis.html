@@ -1,3 +1,117 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cerpen Momo</title>
+
+<style>
+    body {
+        font-family: "Georgia", serif;
+        margin: 0;
+        padding: 0;
+        line-height: 1.8;
+        background: linear-gradient(to bottom, #0f2027, #203a43, #2c5364);
+        color: #f1f1f1;
+        scroll-behavior: smooth;
+    }
+
+    header {
+        background: rgba(0,0,0,0.6);
+        padding: 30px;
+        text-align: center;
+        box-shadow: 0 3px 10px rgba(0,0,0,0.5);
+    }
+
+    header h1 {
+        margin: 0;
+        font-size: 2.5rem;
+        color: #ffdd57;
+        text-shadow: 0 0 10px #ff8;
+    }
+
+    nav {
+        background: rgba(255,255,255,0.1);
+        padding: 15px;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        position: sticky;
+        top: 0;
+        backdrop-filter: blur(6px);
+        z-index: 1000;
+    }
+
+    nav a {
+        text-decoration: none;
+        color: #ffdd57;
+        font-weight: bold;
+        transition: 0.3s;
+    }
+
+    nav a:hover {
+        color: #ff6ec7;
+    }
+
+    nav a.active {
+        color: #ff6ec7;
+        text-shadow: 0 0 8px #ff6ec7;
+    }
+
+    section {
+        max-width: 850px;
+        margin: 40px auto;
+        padding: 25px;
+        background: rgba(255,255,255,0.05);
+        border-radius: 12px;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+        animation: fadeIn 1s ease-in-out;
+    }
+
+    section h2 {
+        color: #ffdd57;
+        border-bottom: 2px solid rgba(255,255,255,0.2);
+        padding-bottom: 5px;
+    }
+
+    footer {
+        text-align: center;
+        padding: 20px;
+        background: rgba(0,0,0,0.7);
+        color: #bbb;
+        margin-top: 40px;
+    }
+
+    @keyframes fadeIn {
+        from {opacity: 0; transform: translateY(30px);}
+        to {opacity: 1; transform: translateY(0);}
+    }
+
+    #toTop {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        background: #ffdd57;
+        color: #222;
+        border: none;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        font-size: 18px;
+        cursor: pointer;
+        display: none;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.6);
+        transition: 0.3s;
+        z-index: 999;
+    }
+
+    #toTop:hover {
+        background: #ff6ec7;
+        color: white;
+    }
+</style>
+</head>
+
 <body>
 
 <header>
@@ -9,11 +123,11 @@
     <a href="#abstrak">Abstrak</a>
     <a href="#pendahuluan">Pendahuluan</a>
     <a href="#awal">Awal Kisah</a>
-    <a href="#hamilton">Pertemuan Misterius</a>
-    <a href="#gibbs">Perjalanan Bersama</a>
-    <a href="#bidang">Rintangan Terakhir</a>
-    <a href="#modern">Akhir Cerita</a>
-    <a href="#kesimpulan">Pesan Cerita</a>
+    <a href="#pertemuan">Pertemuan Misterius</a>
+    <a href="#perjalanan">Perjalanan Bersama</a>
+    <a href="#rintangan">Rintangan Terakhir</a>
+    <a href="#akhir">Akhir Cerita</a>
+    <a href="#pesan">Pesan Cerita</a>
 </nav>
 
 <section id="abstrak">
@@ -43,7 +157,7 @@
     </p>
 </section>
 
-<section id="hamilton">
+<section id="pertemuan">
     <h2>2. Pertemuan Misterius</h2>
     <p>
         Meskipun Pumo selalu menghilang ketika nenek melihatnya, nenek tetap tersenyum. Momo percaya bahwa kucing 
@@ -51,7 +165,7 @@
     </p>
 </section>
 
-<section id="gibbs">
+<section id="perjalanan">
     <h2>3. Perjalanan Bersama</h2>
     <p>
         Musim berganti, Momo mulai sering sakit. Tapi Pumo selalu menemaninya, tidur di pangkuannya, memberi rasa hangat. 
@@ -59,7 +173,7 @@
     </p>
 </section>
 
-<section id="bidang">
+<section id="rintangan">
     <h2>4. Rintangan Terakhir</h2>
     <p>
         Di malam terakhir, saat hujan turun dan angin bersenandung, Pumo datang ke samping ranjang Momo. 
@@ -68,7 +182,7 @@
     </p>
 </section>
 
-<section id="modern">
+<section id="akhir">
     <h2>5. Akhir Cerita</h2>
     <p>
         Keesokan paginya, Momo telah pergi. Namun, nenek melihat dua sosok kecil berlari di antara pepohonan: 
@@ -77,7 +191,7 @@
     </p>
 </section>
 
-<section id="kesimpulan">
+<section id="pesan">
     <h2>Pesan Cerita</h2>
     <p>
         Cerita Momo mengajarkan bahwa persahabatan, keberanian, dan kebaikan bisa hadir meski singkat. 
@@ -127,3 +241,4 @@
 </script>
 
 </body>
+</html>
