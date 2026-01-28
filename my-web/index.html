@@ -537,6 +537,49 @@ footer p{
   }
 }
 
+  /* ===== MOBILE NAVBAR ===== */
+.menu-btn {
+  display: none;
+  font-size: 26px;
+  background: none;
+  border: none;
+  color: var(--text);
+  cursor: pointer;
+}
+
+/* Mobile Mode */
+@media (max-width: 768px) {
+
+  nav .container {
+    flex-wrap: wrap;
+  }
+
+  .menu-btn {
+    display: block;
+  }
+
+  nav ul {
+    width: 100%;
+    display: none;
+    flex-direction: column;
+    margin-top: 14px;
+    gap: 16px;
+    background: rgba(5,7,15,.95);
+    padding: 20px;
+    border-radius: 16px;
+    border: 1px solid var(--border);
+  }
+
+  nav ul.show {
+    display: flex;
+  }
+
+  nav ul li {
+    text-align: center;
+  }
+}
+
+
 
 
 
@@ -1001,8 +1044,18 @@ const observer = new IntersectionObserver(entries=>{
   });
 },{threshold:0.3});
 if(aboutSec) observer.observe(aboutSec);
+
+  // ===== MOBILE NAV TOGGLE =====
+const menuBtn = document.getElementById('menuBtn');
+const navMenu = document.getElementById('navMenu');
+
+menuBtn.addEventListener('click', () => {
+  navMenu.classList.toggle('show');
+});
+
 </script>
 </body>
 </html>
+
 
 
